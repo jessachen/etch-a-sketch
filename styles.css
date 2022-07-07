@@ -1,7 +1,9 @@
-#container {
+#grid {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 500px;
+    height: 500px;
+    flex: 0 0 auto;
 }
 
 #outer {
