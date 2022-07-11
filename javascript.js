@@ -37,6 +37,7 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerHTML = slider.value;
+    newGrid ();
 }
 
 function newGrid () {
@@ -54,8 +55,11 @@ function newGrid () {
         square.style.height = stringDimension;
         square.style.backgroundColor = 'pink';
         square.style.flex = '1 1 auto';
-        grid.appendChild(square);
+        grid.appendChild(square); 
     }
 
+    grid.childNodes.forEach((square) => {
+        square.addEventListener('mouseenter', draw);
+    });
 }
 
