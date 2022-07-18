@@ -9,7 +9,7 @@ for (i = 0; i < size * size; i++) {
     let stringDimension = numberDimension.toString().concat('px');
     square.style.width = stringDimension;
     square.style.height = stringDimension;
-    square.style.backgroundColor = 'pink';
+    square.style.backgroundColor = '#fce8eb';
     square.style.flex = '1 1 auto';
     grid.appendChild(square);
 }
@@ -24,7 +24,7 @@ grid.childNodes.forEach((square) => {
 
 function clearGrid() {
    grid.childNodes.forEach((square) => {
-       square.style.backgroundColor = 'pink';
+       square.style.backgroundColor = '#fce8eb';
     });
 } 
 
@@ -39,7 +39,7 @@ slider.oninput = function() {
     output.innerHTML = slider.value;
     newGrid ();
 }
-
+ 
 function newGrid () {
    while (grid.firstChild) {
        grid.removeChild(grid.firstChild)
@@ -53,7 +53,7 @@ function newGrid () {
         let stringDimension = numberDimension.toString().concat('px');
         square.style.width = stringDimension;
         square.style.height = stringDimension;
-        square.style.backgroundColor = 'pink';
+        square.style.backgroundColor = '#fce8eb';
         square.style.flex = '1 1 auto';
         grid.appendChild(square); 
     }
